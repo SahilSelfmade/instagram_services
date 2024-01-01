@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:instagram_services/instagram_services/services/instagram_services_views.dart';
+import 'package:whatsapp/whatsapp.dart';
 
 import '../core/core.dart';
 
@@ -18,8 +19,12 @@ class InstagramServicesHome extends StatelessWidget {
           color: Colors.amber[700],
           borderRadius: BorderRadius.circular(100),
         ),
-        child:
-            const IconButton(onPressed: null, icon: Icon(Icons.chat_outlined)),
+        child: IconButton(
+            onPressed: () {
+              WhatsApp()
+                  .short(to: 910000000000, message: "Hey", compress: true);
+            },
+            icon: const Icon(Icons.chat_outlined)),
       ),
       body: SafeArea(
         child: Container(
