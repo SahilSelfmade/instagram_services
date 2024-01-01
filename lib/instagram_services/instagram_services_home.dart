@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:instagram_services/instagram_services/services/instagram_services_views.dart';
-import 'package:whatsapp/whatsapp.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../core/core.dart';
 
@@ -20,9 +20,20 @@ class InstagramServicesHome extends StatelessWidget {
           borderRadius: BorderRadius.circular(100),
         ),
         child: IconButton(
-            onPressed: () {
-              WhatsApp()
-                  .short(to: 910000000000, message: "Hey", compress: true);
+            onPressed: () async {
+              var whatsapp = "917066000016";
+
+              final httpsUri = Uri(
+                scheme: 'https',
+                host: 'wa.me',
+                path: whatsapp,
+              );
+              if (await canLaunchUrl(httpsUri)) {
+                await launchUrl(httpsUri);
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text("whatsapp no installed")));
+              }
             },
             icon: const Icon(Icons.chat_outlined)),
       ),
@@ -68,17 +79,18 @@ class InstagramServicesHome extends StatelessWidget {
                   Container(),
                   MainTileContainer(
                     text: 'Followers',
-                    onTap: () => context.goNamed(AppRoutesConstants.followers),
+                    onTap: () =>
+                        context.pushNamed(AppRoutesConstants.followers),
                   ),
                   AppHelperFunctions.spaceV(20),
                   MainTileContainer(
                     text: 'Views',
-                    onTap: () => context.goNamed(AppRoutesConstants.views),
+                    onTap: () => context.pushNamed(AppRoutesConstants.views),
                   ),
                   AppHelperFunctions.spaceV(20),
                   MainTileContainer(
                     text: 'Likes',
-                    onTap: () => context.goNamed(AppRoutesConstants.likes),
+                    onTap: () => context.pushNamed(AppRoutesConstants.likes),
                   ),
                   AppHelperFunctions.spaceV(20),
                 ],
@@ -103,6 +115,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      centerTitle: true,
       backgroundColor: Colors.amber[700],
       automaticallyImplyLeading: false,
       leading: !isBack
