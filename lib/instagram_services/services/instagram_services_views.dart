@@ -14,22 +14,22 @@ class InstagramServicesViews extends StatefulWidget {
 
 class _InstagramServicesViewsState extends State<InstagramServicesViews> {
   final listOneReels = [
-    PricesModel(pricing: 0, quantity: 100),
-    PricesModel(pricing: 0, quantity: 1000),
-    PricesModel(pricing: 0, quantity: 5000),
-    PricesModel(pricing: 0, quantity: 10000),
+    PricesModel(pricing: 15, quantity: 1000),
+    PricesModel(pricing: 70, quantity: 5000),
+    PricesModel(pricing: 120, quantity: 10000),
+    PricesModel(pricing: 1000, quantity: 100000),
   ];
   final listTwoStory = [
-    PricesModel(pricing: 0, quantity: 100),
-    PricesModel(pricing: 0, quantity: 1000),
-    PricesModel(pricing: 0, quantity: 5000),
-    PricesModel(pricing: 0, quantity: 10000),
+    PricesModel(pricing: 15, quantity: 1000),
+    PricesModel(pricing: 70, quantity: 5000),
+    PricesModel(pricing: 120, quantity: 10000),
+    PricesModel(pricing: 1000, quantity: 100000),
   ];
   final listThreeIGTV = [
-    PricesModel(pricing: 0, quantity: 100),
-    PricesModel(pricing: 0, quantity: 1000),
-    PricesModel(pricing: 0, quantity: 5000),
-    PricesModel(pricing: 0, quantity: 10000),
+    PricesModel(pricing: 15, quantity: 1000),
+    PricesModel(pricing: 70, quantity: 5000),
+    PricesModel(pricing: 120, quantity: 10000),
+    PricesModel(pricing: 1000, quantity: 100000),
   ];
 
   @override
