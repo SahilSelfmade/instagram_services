@@ -13,25 +13,25 @@ class InstagramServicesLikes extends StatefulWidget {
 }
 
 class _InstagramServicesLikesState extends State<InstagramServicesLikes> {
-  final listOne = [
+  final listOne30DAY = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listTwo = [
+  final listTwo365DAYREFILL = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listThree = [
+  final listThreeLIFETIME = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listFour = [
+  final listFourNOSUPPORT = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
@@ -54,7 +54,7 @@ class _InstagramServicesLikesState extends State<InstagramServicesLikes> {
               height: 20,
             ),
             TypeList(
-              list: listOne,
+              list: listOne30DAY,
               type: 'Likes',
             ),
             const MainTileContainer(text: '365 Day Refill'),
@@ -62,7 +62,7 @@ class _InstagramServicesLikesState extends State<InstagramServicesLikes> {
               height: 20,
             ),
             TypeList(
-              list: listTwo,
+              list: listTwo365DAYREFILL,
               type: 'Likes',
             ),
             const MainTileContainer(text: 'Lifetime Refill'),
@@ -70,7 +70,7 @@ class _InstagramServicesLikesState extends State<InstagramServicesLikes> {
               height: 20,
             ),
             TypeList(
-              list: listThree,
+              list: listThreeLIFETIME,
               type: 'Likes',
             ),
             const MainTileContainer(text: 'No Refill/No Support'),
@@ -78,7 +78,7 @@ class _InstagramServicesLikesState extends State<InstagramServicesLikes> {
               height: 20,
             ),
             TypeList(
-              list: listFour,
+              list: listFourNOSUPPORT,
               type: 'Likes',
             ),
           ],

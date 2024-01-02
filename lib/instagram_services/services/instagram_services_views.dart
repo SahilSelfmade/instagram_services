@@ -13,30 +13,25 @@ class InstagramServicesViews extends StatefulWidget {
 }
 
 class _InstagramServicesViewsState extends State<InstagramServicesViews> {
-  final listOne = [
+  final listOneReels = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listTwo = [
+  final listTwoStory = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listThree = [
+  final listThreeIGTV = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listFour = [
-    PricesModel(pricing: 0, quantity: 100),
-    PricesModel(pricing: 0, quantity: 1000),
-    PricesModel(pricing: 0, quantity: 5000),
-    PricesModel(pricing: 0, quantity: 10000),
-  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +49,7 @@ class _InstagramServicesViewsState extends State<InstagramServicesViews> {
               height: 20,
             ),
             TypeList(
-              list: listOne,
+              list: listOneReels,
               type: 'Views',
             ),
             const MainTileContainer(text: 'STORY'),
@@ -62,7 +57,7 @@ class _InstagramServicesViewsState extends State<InstagramServicesViews> {
               height: 20,
             ),
             TypeList(
-              list: listTwo,
+              list: listTwoStory,
               type: 'Views',
             ),
             const MainTileContainer(text: 'IGTV'),
@@ -70,7 +65,7 @@ class _InstagramServicesViewsState extends State<InstagramServicesViews> {
               height: 20,
             ),
             TypeList(
-              list: listThree,
+              list: listThreeIGTV,
               type: 'Views',
             ),
           ],

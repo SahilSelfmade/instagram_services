@@ -21,7 +21,7 @@ class InstagramServicesHome extends StatelessWidget {
         ),
         child: IconButton(
             onPressed: () async {
-              var whatsapp = "917066000016";
+              var whatsapp = "918183848511";
 
               final httpsUri = Uri(
                 scheme: 'https',

@@ -15,25 +15,25 @@ class InstagramServicesFollowers extends StatefulWidget {
 
 class _InstagramServicesFollowersState
     extends State<InstagramServicesFollowers> {
-  final listOne = [
+  final listOne30DAYREFILL = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listTwo = [
+  final listTwo365DAYS = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listThree = [
+  final listThreeLIFETIME = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
-  final listFour = [
+  final listFourNOSUPPORT = [
     PricesModel(pricing: 0, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
@@ -56,7 +56,7 @@ class _InstagramServicesFollowersState
               height: 20,
             ),
             TypeList(
-              list: listOne,
+              list: listOne30DAYREFILL,
               type: 'Followers',
             ),
             const MainTileContainer(text: '365 Day Refill'),
@@ -64,7 +64,7 @@ class _InstagramServicesFollowersState
               height: 20,
             ),
             TypeList(
-              list: listTwo,
+              list: listTwo365DAYS,
               type: 'Followers',
             ),
             const MainTileContainer(text: 'Lifetime Refill'),
@@ -72,7 +72,7 @@ class _InstagramServicesFollowersState
               height: 20,
             ),
             TypeList(
-              list: listThree,
+              list: listThreeLIFETIME,
               type: 'Followers',
             ),
             const MainTileContainer(text: 'No Refill/No Support'),
@@ -80,7 +80,7 @@ class _InstagramServicesFollowersState
               height: 20,
             ),
             TypeList(
-              list: listFour,
+              list: listFourNOSUPPORT,
               type: 'Followers',
             ),
           ],
