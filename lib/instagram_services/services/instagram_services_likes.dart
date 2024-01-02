@@ -14,28 +14,28 @@ class InstagramServicesLikes extends StatefulWidget {
 
 class _InstagramServicesLikesState extends State<InstagramServicesLikes> {
   final listOne30DAY = [
-    PricesModel(pricing: 0, quantity: 100),
+    PricesModel(pricing: 10, quantity: 100),
     PricesModel(pricing: 0, quantity: 1000),
     PricesModel(pricing: 0, quantity: 5000),
     PricesModel(pricing: 0, quantity: 10000),
   ];
   final listTwo365DAYREFILL = [
-    PricesModel(pricing: 0, quantity: 100),
-    PricesModel(pricing: 0, quantity: 1000),
-    PricesModel(pricing: 0, quantity: 5000),
-    PricesModel(pricing: 0, quantity: 10000),
+    PricesModel(pricing: 10, quantity: 100),
+    PricesModel(pricing: 25, quantity: 1000),
+    PricesModel(pricing: 110, quantity: 5000),
+    PricesModel(pricing: 200, quantity: 10000),
   ];
   final listThreeLIFETIME = [
-    PricesModel(pricing: 0, quantity: 100),
-    PricesModel(pricing: 0, quantity: 1000),
-    PricesModel(pricing: 0, quantity: 5000),
-    PricesModel(pricing: 0, quantity: 10000),
+    PricesModel(pricing: 10, quantity: 100),
+    PricesModel(pricing: 30, quantity: 1000),
+    PricesModel(pricing: 130, quantity: 5000),
+    PricesModel(pricing: 250, quantity: 10000),
   ];
   final listFourNOSUPPORT = [
-    PricesModel(pricing: 0, quantity: 100),
-    PricesModel(pricing: 0, quantity: 1000),
-    PricesModel(pricing: 0, quantity: 5000),
-    PricesModel(pricing: 0, quantity: 10000),
+    PricesModel(pricing: 10, quantity: 100),
+    PricesModel(pricing: 20, quantity: 1000),
+    PricesModel(pricing: 95, quantity: 5000),
+    PricesModel(pricing: 180, quantity: 10000),
   ];
   @override
   Widget build(BuildContext context) {
